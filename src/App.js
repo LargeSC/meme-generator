@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react"
+import Header from "./components/Header"
+import Meme from "./components/Meme"
+import "./style.css"
+/**
+TODO: Adjust the meme's font size to a value that is relative to the screen width
+TODO: Create a branch where you can drag the text for correct placement.
+TODO: Figure out if possible to save as a whole image including text.
+ */
+export default function App() {
+    return (
+        <div>
+            <Header />
+            <Meme />
+        </div>
+    )
 }
-
-export default App;
